@@ -1,0 +1,23 @@
+@use "base";
+@use "homePage";
+@use "thankPage";
+
+
+.attribution { 
+    width: 100%;
+    height: auto;
+    font-size: 11px; 
+    color: base.$neutral1; 
+    position: fixed; 
+    bottom: 0; 
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+

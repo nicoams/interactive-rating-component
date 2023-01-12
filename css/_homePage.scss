@@ -1,0 +1,90 @@
+@use "base";
+
+.home{
+    h1, p, button{
+        padding-top: 0.2rem;
+    }
+
+    .home-icon{
+        background-color: rgba(base.$neutral4, 1);
+        width: 2rem;
+        height: 2rem;
+       @extend %flexcenter;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+
+        img{
+            width: 0.8rem;
+        }
+    }
+
+    h1{
+        color: base.$neutral1;
+        font-size: 1.5rem;
+    }
+    
+    #divMessage{
+        font-size: 0.8rem;
+        color: base.$neutral1;
+        padding-top: 0.2rem;
+    }
+
+    .btn-area{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    input[type=radio]{
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+
+    .btn-number{
+        background-color: base.$neutral4;
+        color: base.$neutral3;
+        border: none;
+        border-radius: 3.5rem;
+        width: calc(100% / 5 - 1rem);
+        height: 2.5rem;
+        font-size: 0.8rem;
+        position: relative;
+        text-align: center;
+        @extend %flexcenter;
+
+        &:hover{
+            background-color: base.$neutral3;
+            color: base.$neutral1;
+            cursor: pointer;
+        }
+
+        &:focus-within {
+            background-color: base.$primary-color;
+            color: base.$neutral1;
+            cursor: pointer;
+        }
+
+    }
+
+    .btn-submit{
+        border-radius: 1.3rem;
+        height: 2.5rem;
+        width: 100%;
+        background-color: base.$primary-color;
+        color: base.$neutral1;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 0.8rem;
+        border: none;
+
+        &:hover{
+            background-color: base.$neutral1;
+            color: base.$primary-color;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+$primary-color: #fb7413;
+$neutral1: #ffffff;
+$neutral2: #959eac;
+$neutral3: #7c8798;
+$neutral4: #252d37;
+$neutral5: #121417;
+
+%flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    background-color: $neutral5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-wrapper{
+    width: 20vw;
+    height: 46vh;
+    margin: 27vh auto;
+    padding: 1.5rem;
+    background-image: linear-gradient(rgba($neutral4, 0.8), rgba($neutral4, 0.5));
+    color: $neutral2;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+    p{
+        color: $neutral3;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .card-wrapper{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 810px){
+    .card-wrapper{
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1045px){
+    .card-wrapper{
+        width: 30vw;
+    }
+}

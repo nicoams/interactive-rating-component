@@ -1,0 +1,42 @@
+@use "base";
+
+.thankYou{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    .thankYou-icon img{
+        width: 7.5rem;
+    }
+
+    .highlight{
+        background-color: base.$neutral4;
+        color: base.$primary-color;
+        width: 60%;
+        padding-top: 0.2rem;
+        border-radius: 1.3rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+
+        span{
+            font-size: inherit;
+
+
+        }
+    }
+
+    h2{
+        color: base.$neutral1;
+        font-size: 1.5rem;
+    }
+}
+
+#rating input{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
