@@ -6,21 +6,25 @@
     }
 
     .home-icon{
-        background-color: rgba(base.$neutral4, 1);
-        width: 2rem;
-        height: 2rem;
+        background-color: rgba(base.$neutral3, 0.1);
+        width: 3rem;
+        height: 3rem;
        @extend %flexcenter;
         border-radius: 50%;
         margin-bottom: 1rem;
 
         img{
-            width: 0.8rem;
+            width: 1rem;
         }
     }
 
     h1{
         color: base.$neutral1;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    p{
+        line-height: 1.5rem;
     }
     
     #divMessage{
@@ -35,7 +39,7 @@
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        margin: 1rem 0;
+        margin-bottom: 1rem;
     }
 
     input[type=radio]{
@@ -48,10 +52,10 @@
         background-color: base.$neutral4;
         color: base.$neutral3;
         border: none;
-        border-radius: 3.5rem;
+        border-radius: 4rem;
         width: calc(100% / 5 - 1rem);
-        height: 2.5rem;
-        font-size: 0.8rem;
+        height: 3.2rem;
+        font-size: 1rem;
         position: relative;
         text-align: center;
         @extend %flexcenter;
@@ -71,14 +75,14 @@
     }
 
     .btn-submit{
-        border-radius: 1.3rem;
-        height: 2.5rem;
+        border-radius: 2rem;
+        height: 2.7rem;
         width: 100%;
         background-color: base.$primary-color;
         color: base.$neutral1;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
         border: none;
 
         &:hover{
