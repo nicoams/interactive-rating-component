@@ -7,29 +7,35 @@
     align-items: center;
     text-align: center;
     
-    .thankYou-icon img{
-        width: 7.5rem;
+    .thankYou-icon {
+        width: 11rem;
+        margin: 1rem auto;
     }
 
     .highlight{
         background-color: base.$neutral4;
-        color: base.$primary-color;
+        color: rgba(base.$primary-color, 0.8);
         width: 60%;
         padding-top: 0.2rem;
         border-radius: 1.3rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
         margin-bottom: 0.8rem;
 
         span{
             font-size: inherit;
-
-
         }
     }
 
-    h2{
+    h1{
         color: base.$neutral1;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    p{
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
