@@ -28,13 +28,13 @@ body{
 }
 
 .card-wrapper{
-    width: 20vw;
-    height: 46vh;
-    margin: 27vh auto;
-    padding: 1.5rem;
+    width: 25vw;
+    height: 52vh;
+    margin: 24vh auto;
+    padding: 2rem;
     background-image: linear-gradient(rgba($neutral4, 0.8), rgba($neutral4, 0.5));
     color: $neutral2;
-    border-radius: 5%;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +42,7 @@ body{
     
     p{
         color: $neutral3;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
